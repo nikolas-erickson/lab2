@@ -6,8 +6,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <html>
 
 <head>
-    <title>CSS - 2nd Lab</title>
+    <title>Sign In</title>
     <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <style>
     </style>
@@ -19,7 +20,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <header class="clear_fix">
         <div class="container">
 
-            <img src="img/logo_smaller_trans.png" alt="logo" class="logo">
+            <img src="img/logo_small.png" alt="logo" class="logo">
 
             <nav>
                 <ul>
@@ -35,24 +36,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </header>
     <main>
 
-        <div class="container">
-            <h1 class="page-header">Sign In</h1>
-            <div class="page-content">
-                <div class="form-wrapper sign-in">
-                    <form method="post" action="#">
-                        <div class="input-group">
-
-                            <input type="text" id="username">
-                        </div>
-                        <div class="input-group">
-                            <input type="password" id="password">
-                        </div>
-                        <div class="input-group">
-                            <input type="submit" value="Sign In" id="submit">
-                        </div>
-                    </form>
+        <div class="container form-wrapper">
+            <form method="post" action="#">
+                <h1>Sign In</h1>
+                <div class="input-box">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
                 </div>
-            </div>
+                <div class="input-box">
+                    <input type="password" id="password" placeHolder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="remember">
+                    <label>
+                        <input type="checkbox">Remember Me
+                    </label>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <input type="submit" value="Sign In" id="submit" class="btn">
+                <div class="register-link">
+                    <p>Don't have an account? <a href="register.html" class="sign-up-btn-link">Register</a></p>
+                </div>
+            </form>
         </div>
     </main>
     <footer>

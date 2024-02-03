@@ -6,8 +6,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <html>
 
 <head>
-    <title>CSS - 2nd Lab</title>
+    <title>Register</title>
     <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <style>
     </style>
@@ -19,7 +20,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <header class="clear_fix">
         <div class="container">
 
-            <img src="img/logo_smaller_trans.png" alt="logo" class="logo">
+            <img src="img/logo_small.png" alt="logo" class="logo">
 
             <nav>
                 <ul>
@@ -35,8 +36,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </header>
     <main>
 
-        <div class="container">
-            <h1 class="page-header">Register</h1>
+        <div class="container form-wrapper">
+            <form method="post" action="#">
+                <h1>Register</h1>
+                <div class="input-box">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" placeHolder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password2" placeHolder="Confirm Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <input type="submit" value="Register" id="submit" class="btn">
+            </form>
         </div>
     </main>
     <footer>

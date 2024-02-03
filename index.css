@@ -1,0 +1,51 @@
+main .index-content {
+   position: relative;
+   width: 80%;
+   margin: auto auto;
+   height: 70vh;
+}
+
+.index-content #logo {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translateY(-50%) translateX(-50%);
+   width: 50%;
+}
+
+.index-content a {
+   color: white;
+   font-weight: 600;
+}
+
+.index-content .btn {
+   position: absolute;
+   margin: 10vw 15vh;
+   padding: 25px;
+   border-radius: 20px;
+   background: transparent;
+   border: 2px solid rgba(255, 255, 255, .2);
+   backdrop-filter: blur(10px) contrast(40%);
+   -webkit-backdrop-filter: blur(10px) contrast(40%);
+   box-shadow: 0 0 10px rbga(0, 0, 0, .2);
+}
+
+.btn1 {
+   right: 0;
+   top: 0;
+}
+
+.btn2 {
+   left: 0;
+   top: 0;
+}
+
+.btn3 {
+   right: 0;
+   bottom: 0;
+}
+
+.btn4 {
+   left: 0;
+   bottom: 0;
+}
